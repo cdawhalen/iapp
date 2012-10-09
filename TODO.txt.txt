@@ -1,0 +1,12 @@
+October 9th.
+
+Success in using PhoneGap to build .apk files 
+Success in loading onto my android by downloading to local computer and 
+mailing to my account.  Highlight attachment in email and that loads 
+automatically.
+
+To Do:
+	front page graphic is not loading.
+	texting does not work.
+	some minor css problems with footer image
+	
