@@ -37,6 +37,9 @@ function onDeviceReady() {
 	$("#open_logo").tap(function() {
 		$.mobile.changePage("#page");	
 	});
+	if ( document.getElementById("readyset").style.display == "none") {
+		document.getElementById("loading").style.display = "none";
+	}
 }
 </script>
 <div data-role="page" id="page">
