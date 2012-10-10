@@ -22,8 +22,13 @@
 </head> 
 <body> 
 <div data-role="page" id="opening">
-<a href="#page"><img src="uilogo/UI_NICapp.jpg" width="335" height="360"></a>
+<img src="uilogo/UI_NICapp.jpg" id="open_logo" width="335" height="360">
 </div>
+<script>
+$("#open_logo").swiperight(function() {
+	$.mobile.changePage("#page");	
+});
+</script>
 <div data-role="page" id="page">
 	<div data-role="header">
 		<h1>Your U-Idaho Transfer Advisor</h1>
