@@ -84,7 +84,12 @@ $(document).ready(function() {
     </div>
     <div data-role="content">
     	<ul data-role="listview">
-    		<li><a href="http://www.uidaho.edu/cda/studentguide/jt-admissions-and-concurrent-enrollment-opportunities/northidaho">The University of Idaho, Coeur d’Alene offers certificate, undergraduate and graduate degree programs.</a>  </li>
+    		<li class="linking">The University of Idaho, Coeur d’Alene offers certificate, undergraduate and graduate degree programs.</li>
+            <script>
+				$("div ul li.linking").bind('tap',function(event, ui) {
+					$.mobile.loadPage("http://www.uidaho.edu/cda/studentguide/jt-admissions-and-concurrent-enrollment-opportunities/northidaho", "slide");
+				});
+			</script>
         </ul>
         <ul>
         	<li>Convenient class schedules and online course offerings offered close to home.</li>
