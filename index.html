@@ -24,7 +24,7 @@
 <div data-role="page" id="opening">
 	<img src="uilogo/UI_NICapp.jpg" id="open_logo" width="335" height="360">
 <div id="loading">
-Loading App1.1, please wait...
+Loading App1.2, please wait...
 </div>
 <div id="readyset" style="display:none">
 Ready to go!  Tap to continue...
@@ -611,6 +611,13 @@ function onDeviceReady() {
 		document.getElementById("readyset").style.display = "";
 	}
 }
+$(document).ready(function() {
+	if ( document.getElementById("readyset").style.display == "none") {
+		document.getElementById("loading").style.display = "none";
+		document.getElementById("readyset").style.display = "";
+	}
+		    
+});
 </script>
 
 </body>
