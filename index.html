@@ -22,7 +22,7 @@
 </head> 
 <body> 
 <div data-role="page" id="opening">
-<img src="uilogo/UI_NICapp.jpg" id="open_logo" width="335" height="360">
+	<img src="uilogo/UI_NICapp.jpg" id="open_logo" width="335" height="360">
 <div id="loading">
 Loading App3, please wait...
 </div>
@@ -31,7 +31,12 @@ Ready to go!  Tap to continue...
 </div>
 </div>
 <script>
-document.addEventListener("deviceready", onDeviceReady, false);
+
+if (navigator.userAgent.match(/(iPhone|Android)/)) {
+	document.addEventListener("deviceready", onDeviceReady, false);
+}else{
+	onDeviceReady();
+}
 
 function onDeviceReady() {
 	$("#open_logo").tap(function() {
